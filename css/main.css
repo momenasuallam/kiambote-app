@@ -1,5 +1,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --white: #ffffff;
+    --black30: #303030;
+    --black46: #464646;
+    --gray: #707070;
+    --primarycolor: #009FD1;
+    --bgcolorlite: #F9F9F9;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
 body {
     font-family: 'Poppins', sans-serif !important;
+}
+.bglight{
+    background-color: var(--bgcolorlite);
+}
+
+.login-page{
+    padding: 50px;
+}
+.overviewformdiv1{
+    margin-top: -45px;
+    padding: 0 1rem 0 1rem;
+}
+.ovfd1_tophead{
+position: relative;
+    bottom: -40px;
+}
+.ovfd1_tophead h2{
+font-weight: 600;
+font-size: 3rem;
+color: black;
+text-align: center;
+text-transform: capitalize;
+}
+.ovfd1_tophead p{
+font-weight: 400;
+font-size: 1.2rem;
+color: gray;
+text-align: center;
+}
+.ovfd1_logopart{
+
+}
+
+.bflogocircleimg{
+
+width: 100%;
+margin: auto;
+display: block;
+}
+
+.mainformdiv2{
+max-width: 86%;
+    border-radius: 8px;
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    height: 85vh;
+    margin: auto;
+    box-shadow: 0px 3px 72px 0px #00000012;
+}
+.mainformdiv2 h3{
+font-weight: 500;
+font-size: 2rem;
+color: black;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 2rem;
+}
+.mainformdiv2 form{
+
+}
+.mfd2_bottomstickdiv{
+
+padding: 0 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    align-items: center;
+    
+}
+.mfd2_bottomdiv{
+background-color: #F8F8F8;
+padding: 20px;
+width: 100%;
+border-radius: 8px;
+}
+.controlaccsvg{
+position: absolute;
+    left: 70px;
+    top: 30px;
+} 
+.controlaccsvg img{
+width: 41.12px;
+}
+.mainregishere {
+text-align: center;
+}
+.mainregishere p{
+font-size: 1.2rem;
+font-weight: 500;
+color: black;
+text-align: center;
+margin-bottom: 0px;
+}
+.mainregishere a{
+font-size: 1.2rem;
+font-weight: 500;
+text-align: center;
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--primarycolor) !important;
+    border-color: var(--primarycolor) !important;
+}
+.btn{
+ height: 55px;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px !important;
+}
+a{
+    font-size: 20px;
+    color: var(--primarycolor) !important;
+}
+.forgrtpass{
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+
+}
+.form-label {
+    margin-bottom: 0.2rem !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.form-control{
+ font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #F5F5F5 !important;
+    border-radius: 8px;
+    border: 1px solid #F5F5F5 !important;
+    padding: 20px;
+}
+input::placeholder{
+    color: #B7B7B7 !important;
+   
+    
+}
+.loginhei{
+    height: 100vh;
+}
+
+@media(max-width: 1600px)
+{
+    .ovfd1_tophead h2{
+        font-size: 1.6rem;
+    }
+    .ovfd1_tophead p {
+    font-size: 1rem;
+}
+.mainformdiv2 h3 {
+     font-size: 1.6rem;
+}
+.form-label{
+     font-size: 1rem;
+}
+.forgrtpass{
+    font-size: 1rem;
+}
+.btn {
+    height: 46px;
+    font-size: 1rem !important;
+}
+.mainformdiv2{
+    padding: 25px;
+    height: 90vh;
+}
+.mfd2_bottomstickdiv{
+    padding: 25px;
+}
+.mfd2_bottomstickdiv p{
+    font-size: .8rem;
+    margin-bottom: -5px;
+}
+.mainregishere a{
+    font-size: .8rem;
+}
+.controlaccsvg img {
+    width: 35.12px;
+}
+.controlaccsvg {
+    position: absolute;
+    left: 40px;
+    top: 50px;
+}
+.login-page{
+    padding: 25px 0px 0px 0px;
+}
+.overviewformdiv1 {
+    margin-top: -40px;
+}
+}
+
+@media(max-width: 845px)
+{
+    .ovfd1_tophead h2{
+        font-size: 1.4rem;
+    }
+    .ovfd1_tophead p {
+    font-size: 0.8rem;
+}
+.ovfd1_logopart {
+    margin-top: 5rem;
+}
+.overviewformdiv1 {
+    margin-top: -30px;
+}
+}
+.bflogocircleimgmbl{
+    display: none;
+}
+@media(max-width: 761px)
+{
+.ovfd1_logopart{
+    display: none;
+}
+.bflogocircleimgmbl{
+    display: block;
+    width: 186px;
+    margin: auto;
+}
+.overviewformdiv1 {
+    margin-top: 0px;
+}
+.ovfd1_tophead {
+    position: relative;
+    bottom: 0px;
+    margin: 25px 0;
+}
+.mfd2_bottomstickdiv {
+    padding: 25px;
+}
+.login-page{
+    padding: 25px 0px 25px 0px;
+}
+.mainformdiv2{
+    margin-bottom: 25px;
+}
+}
+@media(max-width:500px)
+{
+.ovfd1_tophead h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.ovfd1_tophead p{
+    font-size: 12px;
+}
+.mainformdiv2{
+ width: 90%;
+}
+.mainformdiv2 h3{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+.form-label {
+    font-size: 14px;
+}
+.form-control{
+    font-size: 12px !important;
+}
+.forgrtpass {
+     font-size: 14px;
+     margin-bottom: 6px;
+}
+.btn {
+    height: 39px;
+    font-size: 14px !important;
+
+}
+.mainformdiv2 {
+    padding: 15px;
+}
+.controlaccsvg img {
+    width: 24px;
+}
+.mfd2_bottomstickdiv p{
+font-size: 12px !important;
+}
+.mfd2_bottomstickdiv a{
+font-size: 12px !important;
+}
+.mfd2_bottomstickdiv {
+    padding: 15px;
+    bottom: 5px;
+}
+.mfd2_bottomdiv {
+    padding: 15px;
+}
+.controlaccsvg {
+    position: absolute;
+    left: 30px;
+    top: 35px;
+}
+.mainformdiv2{
+    height: 68vh;
+}
 }

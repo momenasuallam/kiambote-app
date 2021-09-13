@@ -1,24 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    
+
     <!-- CSS files -->
-    <link href="css/main.css" rel="stylesheet"/>
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bglight loginhei">
+    <main class="login-page">
+      <div class="container-fluid">
+        <div class="row loginhei">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="overviewformdiv1">
+                <img class="bflogocircleimgmbl" src="./images/KIAMBOTE LOGO Transparent.svg" />
+              <div class="ovfd1_tophead">
+                <h2>Welcome back to KIAMBOTE</h2>
+                <p>Sign in to your Kiambote account to continue</p>
+              </div>
+              <div class="ovfd1_logopart">
+                  <img class="bflogocircleimg" src="./images/logo-with-whitebox.png" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="mainformdiv2">
+              <h3>sign in</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Enter Password"
+                  />
+                </div>
+                <div class="">
+                  <a href="#" class="forgrtpass">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
 
-    <p>It's login page</p>
-    
+              <div class="mfd2_bottomstickdiv">
+                 <div class="mfd2_bottomdiv">
+                   <div class="controlaccsvg">
+                     <img src="./images/account-circle.svg" />
+                 </div>
+                 <div class="mainregishere">
+                     <p>Don't have an account?</p>
+                     <a href="./sign-up.html">Register here</a>
+                 </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- JavaScript File -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/auth.js"></script>
-</body>
+  </body>
 </html>
