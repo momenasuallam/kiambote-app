@@ -14,6 +14,7 @@
 }
 body {
   font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
 }
 .bglight {
   background-color: var(--bgcolorlite);
@@ -366,4 +367,946 @@ input::placeholder {
 }
 .form-check-input:focus {
   box-shadow: 0 0 0 0rem rgb(49 132 253 / 0%) !important;
+}
+
+/* Sidebar Nav */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 276px;
+  max-width: 276px;
+  min-height: 100vh;
+}
+
+#sidebar.active {
+  margin-left: -276px;
+}
+#sidebar {
+  background: #324b54;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 15px 20px;
+  background: #324b54;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(0deg 0% 100% / 30%);
+}
+.sidebar-header button {
+  padding: 0px !important;
+  margin: 0px;
+  height: auto !important;
+  width: auto !important;
+}
+.sidebar-header button img {
+  width: 22px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0 6px 0;
+  border-bottom: 1px solid hsl(0deg 0% 100% / 30%);
+  margin-bottom: 0px !important;
+}
+
+#sidebar ul p {
+  color: #fff9;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#sidebar ul li a {
+  padding: 6px 10px;
+  font-size: 20px;
+  display: block;
+  color: #fff !important;
+  text-decoration: none;
+  margin: 0 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#sidebar ul li {
+  margin-bottom: 6px;
+}
+.iconnavside {
+  width: 46px;
+  height: 46px;
+  display: block;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.iconnavside img {
+  width: 20px;
+}
+#sidebar ul li.active > a {
+  color: var(--primarycolor) !important;
+  background: #ffffff1a !important;
+}
+#sidebar ul li.active > a span {
+  background: var(--primarycolor) !important;
+}
+.navundernav {
+  display: flex;
+  padding: 6px 18px;
+}
+.navundernav .dropdown-toggle {
+  margin: 0px !important;
+  padding: 6px 0px !important;
+}
+.w100 {
+  width: 100%;
+}
+.navundernav .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border: 0px solid !important;
+  font-family: FontAwesome;
+  content: "\f107";
+}
+.listnavbar ul a {
+  font-size: 14px !important;
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  margin-left: 0px !important;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.folowinglist {
+}
+.flistsubfollowing {
+  padding: 6px 18px;
+  display: FLEX;
+  justify-content: space-between;
+  align-items: CENTER;
+}
+.flistsubfollowing a {
+  font-size: 18px;
+  color: #fff !important;
+  text-decoration: none;
+}
+.flistsubfollowing a img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.livered {
+  background-color: red;
+  width: 13px;
+  height: 13px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.folowinglist span {
+  font-size: 14px;
+  display: FLEX;
+  justify-content: space-between;
+  align-items: CENTER;
+}
+.sidebarfooter {
+  padding: 20px 20px;
+}
+.sidebarfooter p {
+  font-size: 16px;
+  color: #fff9 !important;
+  font-weight: 400;
+}
+#content {
+  width: 100%;
+}
+.topbarnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 25px;
+}
+.sideprofdash {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.iconnoti2 {
+  width: 54px;
+  height: 54px;
+  display: block;
+  background-color: #345a711a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.iconnoti2 .fa {
+  color: #345a71;
+}
+.iconnoti2 img {
+  width: 24px;
+}
+.iconlivevideo {
+  width: 44px;
+  height: 44px;
+  display: block;
+  background-color: #345a71;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.iconlivevideo img {
+  width: 20px !important;
+  border: 0px solid !important;
+}
+.iconprof {
+  width: 58px;
+  height: 58px;
+  display: block;
+  background-color: #345a711a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.iconprof .icoimg1 {
+  width: 18px;
+}
+.iconprof img {
+  width: 28px;
+}
+
+.imgprof {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+.logomblshowme {
+  display: none;
+}
+.searchdesk .input-group input {
+  background-color: #a1a1a12e !important;
+  border-radius: 8px 0px 0px 8px !important;
+  border: 0px solid !important;
+  width: 500px;
+}
+.btnpri2 {
+  background-color: #345a71 !important;
+  border: 0px solid #345a71 !important;
+  border-radius: 0px 8px 8px 0px !important;
+  padding: 5px 16px !important;
+}
+.colorwhite {
+  color: #fff !important;
+}
+.input-group > .form-control:focus {
+  z-index: 1;
+}
+.hellosidebtn {
+  display: none !important;
+}
+.diswhenhidesb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.search2topmbl {
+  display: none;
+}
+.headerimg img {
+  width: 100%;
+}
+.profilesection {
+  padding: 30px 50px;
+}
+.proffull {
+}
+.proftop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.flowmediv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.imgprof1 {
+  margin-right: 10px;
+}
+.imgprof1 img {
+  width: 102px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.profmeta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profmeta h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.profmeta p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #00000080;
+  margin-bottom: 5px;
+}
+.profmeta span {
+  font-size: 14px;
+  background-color: red;
+  padding: 3px 6px;
+  border-radius: 8px;
+  display: inline;
+  color: #fff;
+}
+.bt-outprimary {
+  color: #fff !important;
+  background-color: var(--primarycolor) !important;
+  border-radius: 28px !important;
+  width: auto;
+  height: auto;
+  padding: 6px 16px !important;
+  margin-right: 10px;
+}
+.profabout {
+  padding: 20px 0;
+}
+.profabout h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.profabout p {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(0 0 0 / 60%);
+}
+.socialfollow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.livevideopart {
+  position: relative;
+}
+.livevideopart img {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+.showlivevideo {
+  font-size: 14px;
+  background-color: #b7b7b7;
+  border-radius: 8px;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.showlivevideo span {
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  border-radius: 50%;
+  display: block;
+  margin-right: 4px;
+}
+.livevideometa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 20px;
+}
+.metaprofnam {
+  display: flex;
+  align-items: center;
+}
+.livevideometa img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+.livevideometa h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.livevideometa p {
+  font-size: 18px;
+  color: rgb(255 255 255 / 70%);
+  margin-bottom: 0px;
+}
+.pastsessions {
+  padding: 30px 50px;
+}
+.pastsessions h2 {
+  font-size: 42px;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.pastsessionsli {
+  margin-bottom: 20px;
+}
+.pastsessionsli img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.pastsessionsli a {
+  text-decoration: none;
+}
+.pastsessionsli h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: #000 !important;
+}
+.pastsessionsli p {
+  font-size: 18px;
+  color: rgb(0 0 0 / 60%) !important;
+  margin-bottom: 0px;
+}
+.border2 {
+  border: 4px solid #345a71 !important;
+}
+.prel {
+  position: relative;
+}
+.editprofimg {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 3px 29px 0px #00000012;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+}
+.editprofimg .fa {
+  color: #00000080;
+  font-size: 18px;
+}
+.folowerslist {
+  max-width: 680px;
+  padding: 16px 18px;
+}
+.folowerslist p {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.colorlightp {
+  color: #00000080;
+}
+.flistsubfollowers {
+  display: FLEX;
+  justify-content: space-between;
+  align-items: CENTER;
+  margin-bottom: 15px;
+}
+.flistsubfollowers a {
+  text-decoration: none;
+}
+.flistsubfollowers img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.flistsubfollowers h2 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.flistsubfollowers span {
+  font-size: 20px;
+}
+.colorblack {
+  color: #000 !important;
+}
+.fw600 {
+  font-weight: 600;
+}
+.Followedbtn {
+  color: var(--primarycolor) !important;
+  background-color: #fff !important;
+  border-radius: 28px !important;
+  width: auto;
+  height: auto;
+  border: 2px solid var(--primarycolor) !important;
+  padding: 5px 16px !important;
+  margin-right: 10px;
+}
+.dflex {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  transition: color 0s ease-in-out, background-color 0s ease-in-out,
+    border-color 0s ease-in-out !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: inherit !important;
+  background-color: inherit !important;
+  border-color: #dee2e6 transparent #345a71;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-bottom: 4px solid !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent transparent #345a71 !important;
+
+  isolation: isolate;
+}
+.dflex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.livesessionsul {
+}
+.livesessionsul ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0px;
+  flex-wrap: wrap;
+}
+.livesessionsul li {
+  width: 20%;
+}
+.livesesspad {
+  padding: 10px 30px 10px 0;
+}
+.livesessimg img {
+  width: 100%;
+  border-radius: 8px;
+}
+.livesessline {
+  position: relative;
+}
+.livesessred span {
+  background-color: #f74a4a !important;
+}
+.livesessred span::after {
+  background-color: #f74a4a !important;
+}
+.livesessline span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #b0b8bb;
+  display: block;
+  margin: auto;
+}
+.livesessline span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #b0b8bb;
+  display: block;
+  position: absolute;
+  top: 12px;
+}
+.livesessionsul li:last-child > .livesessline span::after {
+  width: 0% !important;
+}
+/* .livesessionsul li:last-child > .livesesspad{
+  padding: 10px 0px !important;
+} */
+.metalivesess h2 {
+  font-size: 20px !important;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.metalivesess span {
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  display: block;
+  margin-bottom: 0px;
+}
+.metalivesess p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+@media (max-width: 1600px) {
+  .socialfollow {
+    position: absolute;
+    left: 0px;
+    top: 7rem;
+  }
+  .profabout {
+    margin-top: 4rem;
+  }
+  .livevideometa h2 {
+    font-size: 14px;
+  }
+  .livevideometa p {
+    font-size: 12px;
+  }
+  .profabout p {
+    font-size: 18px;
+  }
+  .pastsessions h2 {
+    font-size: 24px;
+  }
+  .profmeta h2 {
+    font-size: 18px;
+  }
+  .profmeta p {
+    font-size: 16px;
+  }
+  .profmeta span {
+    font-size: 14px;
+  }
+  .profilesection {
+    padding: 15px 15px;
+  }
+  .pastsessions {
+    padding: 15px 15px;
+  }
+  .iconprof {
+    width: 44px;
+    height: 44px;
+  }
+  .iconprof .icoimg1 {
+    width: 12px;
+  }
+  .iconprof img {
+    width: 20px;
+  }
+  .folowerslist p {
+    font-size: 16px;
+  }
+  .livesessline span {
+    width: 18px;
+    height: 18px;
+  }
+  .livesessline span::after {
+    top: 9px;
+  }
+  .metalivesess h2 {
+    font-size: 16px !important;
+  }
+  .metalivesess span {
+    font-size: 16px;
+  }
+  .metalivesess p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1150px) {
+  .profilesection {
+    padding: 15px 25px;
+  }
+  .pastsessions {
+    padding: 15px 25px;
+  }
+  .profmeta h2 {
+    font-size: 22px;
+  }
+  .profmeta p {
+    font-size: 14px;
+  }
+  .profmeta span {
+    font-size: 12px;
+  }
+  .imgprof1 img {
+    width: 95px;
+  }
+  .profilesection .col-md-7 {
+    width: 100%;
+  }
+  .profilesection .col-md-5 {
+    width: 100%;
+  }
+  .pastsessions h2 {
+    font-size: 28px;
+  }
+  .pastsessionsul .col-lg-3 {
+    width: 50% !important;
+  }
+
+  .livesessionsul li {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .livesessimg img {
+    padding-left: 30px;
+    width: 164px;
+  }
+  .livesesspad {
+    padding: 10px 0px 10px 0;
+  }
+  .livesessline {
+    position: relative;
+    left: -165px;
+    top: 44px;
+  }
+  .metalivesess h2 {
+    margin-bottom: 0px !important;
+    text-align: left;
+  }
+  .metalivesess span {
+    text-align: left;
+  }
+  .metalivesess p {
+    text-align: left;
+  }
+  .livesessline span::after {
+    width: 2px;
+    height: 100%;
+    left: 8px;
+  }
+}
+@media (max-width: 1020px) {
+  .searchdesk .input-group input {
+    width: 250px !important;
+  }
+}
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -276px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  .search2topmbl {
+    display: flex;
+  }
+  .hellosidebtn {
+    display: inline !important;
+  }
+  .searchdesk {
+    display: none !important;
+  }
+  .logomblshowme {
+    display: inline;
+  }
+  .logomblshowme img {
+    width: 131.36px;
+  }
+  .bgactive {
+    opacity: 0.2;
+    background: #000;
+  }
+  #sidebar ul li a {
+    font-size: 16px;
+  }
+  .flistsubfollowing a {
+    font-size: 16px;
+  }
+  #sidebar .sidebar-header {
+    justify-content: flex-start;
+  }
+  .sidebar-header a img {
+    width: 140px;
+  }
+  .pastsessions h2 {
+    font-size: 24px;
+    margin-bottom: 1.2rem;
+  }
+  .pastsessionsul .col-lg-3 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .topbarnav {
+    padding: 8px 15px 8px 3px;
+  }
+  .pastsessions {
+    padding: 15px 15px;
+  }
+  .pastsessions h2 {
+    font-size: 24px;
+    margin-bottom: 1.2rem;
+  }
+  .imgprof {
+    width: 36px;
+    height: 36px;
+  }
+  .iconnoti2 {
+    width: 40px;
+    height: 40px;
+  }
+  .iconnoti2 img {
+    width: 18px;
+  }
+  .iconnoti2 .fa {
+    font-size: 18px;
+  }
+  .profmeta h2 {
+    font-size: 16px;
+  }
+  .profmeta p {
+    margin-bottom: 0px;
+  }
+  .imgprof1 img {
+    width: 66px;
+  }
+  .profabout h4 {
+    font-size: 14px;
+  }
+  .profabout p {
+    font-size: 14px;
+  }
+  .iconprof {
+    width: 30px;
+    height: 30px;
+  }
+  .iconprof .icoimg1 {
+    width: 9px;
+  }
+  .iconprof img {
+    width: 15px;
+  }
+  .bt-outprimary {
+    padding: 3px 16px !important;
+  }
+  .socialfollow {
+    top: 5rem;
+  }
+  .profabout {
+    margin-top: 2.5rem;
+  }
+  .profilesection {
+    padding: 15px 15px;
+  }
+  .showlivevideo {
+    font-size: 11px;
+  }
+  .showlivevideo span {
+    width: 9px;
+    height: 9px;
+  }
+  .showlivevideo {
+    top: 10px;
+    left: 10px;
+  }
+  .livevideometa {
+    padding: 10px;
+  }
+  .iconlivevideo {
+    width: 30px;
+    height: 30px;
+  }
+  .iconlivevideo img {
+    width: 15px !important;
+  }
+  .livevideometa img {
+    width: 35px;
+    height: 35px;
+  }
+  .livevideometa h2 {
+    font-size: 12px;
+  }
+  .livevideometa p {
+    font-size: 10px;
+  }
+  .pastsessionsli h3 {
+    font-size: 14px;
+  }
+  .pastsessionsli p {
+    font-size: 14px;
+  }
+  .pastsessionsli img {
+    margin-bottom: 8px;
+  }
+  .profmeta span {
+    font-size: 10px;
+  }
+  .editprofimg {
+    width: 26px;
+    height: 26px;
+    bottom: 0px;
+  }
+  .editprofimg .fa {
+    font-size: 14px;
+  }
+  .folowerslist p {
+    font-size: 12px;
+  }
+  .flistsubfollowers h2 {
+    font-size: 14px;
+  }
+  .flistsubfollowers span {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+  .flistsubfollowers img {
+    width: 36px;
+    height: 36px;
+  }
+  .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+  .metalivesess h2 {
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  .metalivesess span {
+    font-size: 14px;
+  }
+  .metalivesess p {
+    font-size: 12px;
+  }
+  .livesessline span {
+    width: 16px;
+    height: 16px;
+  }
+  .livesessline span::after {
+    left: 7px;
+  }
 }

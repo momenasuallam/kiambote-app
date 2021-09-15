@@ -7,3 +7,10 @@ $(".toggle-password").click(function () {
     input.attr("type", "password");
   }
 });
+$(document).ready(function () {
+  $(".sidebarCollapse").on("click", function () {
+    $("#sidebar").toggleClass("active");
+    $(".diswhenhidesb button").toggleClass("hellosidebtn");
+    $("#content").toggleClass("bgactive");
+  });
+});

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+
+    <!-- CSS files -->
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bglight">
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <button type="button" id="" class="btn sidebarCollapse">
+            <img src="./images/Icon feather-menu.png" />
+          </button>
+          <a><img src="./images/logo-2.png" /></a>
+        </div>
+
+        <ul class="list-unstyled components listnavbar">
+          <p>General</p>
+          <li class="active">
+            <a href="#">
+              <span class="iconnavside"
+                ><img src="./images/Icon feather-home.svg"
+              /></span>
+              Home
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <span class="iconnavside"
+                ><img src="./images/icon-artists.svg"
+              /></span>
+              Artists
+            </a>
+          </li>
+          <li class="navundernav">
+            <div>
+              <span class="iconnavside"
+                ><img src="./images/Icon awesome-list-ul.svg"
+              /></span>
+            </div>
+            <div class="w100">
+              <a
+                href="#homeSubmenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                >Categories</a
+              >
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                  <a href="#">Categories 1</a>
+                </li>
+                <li>
+                  <a href="#">Categories 2</a>
+                </li>
+                <li>
+                  <a href="#">Categories 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="#">
+              <span class="iconnavside"
+                ><img src="./images/Icon feather-bookmark.svg"
+              /></span>
+              Saved
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <span class="iconnavside"
+                ><img src="./images/Icon feather-settings.svg"
+              /></span>
+              Setting
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled components listnavbar">
+          <p>Following</p>
+
+          <div class="folowinglist">
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+
+              <span>
+                <span class="livered"></span>
+                Live</span
+              >
+            </div>
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+
+              <span>
+                <span class="livered"></span>
+                Live</span
+              >
+            </div>
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+
+              <span>
+                <span class="livered"></span>
+                Live</span
+              >
+            </div>
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+            </div>
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+            </div>
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+            </div>
+            <div class="flistsubfollowing">
+              <a href="#">
+                <img src="./images/folowingimg1.png" />
+                AlfaGaming
+              </a>
+            </div>
+          </div>
+        </ul>
+
+        <div class="sidebarfooter">
+          <p>2021 All Copyrights Reserved</p>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <div class="topbarnav">
+          <div class="diswhenhidesb">
+            <button
+              type="button"
+              id=""
+              class="btn sidebarCollapse hellosidebtn"
+            >
+              <img src="./images/Icon feather-menu-black.png" />
+            </button>
+            <a href="#" class="logomblshowme"
+              ><img src="./images/logo-2-dark.png"
+            /></a>
+          </div>
+          <div class="searchdesk">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control input-text"
+                placeholder="Search"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <div class="input-group-append">
+                <button class="btn btnpri2" type="button">
+                  <i class="fa fa-search colorwhite"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sideprofdash">
+            <a class="iconnoti2 search2topmbl" href="#"
+              ><i class="fa fa-search"></i
+            ></a>
+            <a class="iconnoti2" href="#"
+              ><img src="./images/Icon ionic-ios-notifications.svg"
+            /></a>
+            <a class="#"
+              ><img class="imgprof" src="./images/folowingimg1.png"
+            /></a>
+          </div>
+        </div>
+
+        <section class="headerimg">
+          <img src="./images/artists-main-img-1.png" />
+        </section>
+
+        <section class="profilesection">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="proffull">
+                <div class="proftop">
+                  <div class="profmeta">
+                    <div class="imgprof1 prel">
+                      <a href="#"
+                        ><img src="./images/img01art.png" class="border2"
+                      /></a>
+                      <div class="editprofimg">
+                        <i class="fa fa-pencil"></i>
+                      </div>
+                    </div>
+                    <div class="">
+                      <h2>Abid Iqbal</h2>
+                      <p>2.3 followers</p>
+                    </div>
+                  </div>
+
+                  <div class="flowmediv">
+                    <a href="#" class="btn bt-outprimary">Edit profile</a>
+                    <div class="socialfollow">
+                      <a href="#" class="iconprof"
+                        ><img
+                          class="icoimg1"
+                          src="./images/Icon awesome-facebook-f.svg"
+                      /></a>
+                      <a href="#" class="iconprof"
+                        ><img src="./images/Icon awesome-twitter.svg"
+                      /></a>
+                      <a href="#" class="iconprof"
+                        ><img src="./images/instagram-icon.svg"
+                      /></a>
+                      <a href="#" class="iconprof"
+                        ><img src="./images/Icon awesome-youtube.svg"
+                      /></a>
+                    </div>
+                    <a href="#" class="iconprof"
+                      ><img
+                        style="width: 3px"
+                        src="./images/Icon feather-more-vertical.svg"
+                    /></a>
+                  </div>
+                </div>
+                <div class="profabout">
+                  <h4>About</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                    sea takimata sanctus est.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+
+            <div class="col-md-12">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link colorblack fw600"
+                    id="Streams-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Streams"
+                    type="button"
+                    role="tab"
+                    aria-controls="Streams"
+                    aria-selected="true"
+                  >
+                    Streams
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active colorblack fw600"
+                    id="Following-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Following"
+                    type="button"
+                    role="tab"
+                    aria-controls="Following"
+                    aria-selected="false"
+                  >
+                    Following
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div
+                  class="tab-pane"
+                  id="Streams"
+                  role="tabpanel"
+                  aria-labelledby="Streams-tab"
+                >
+                  <div class="folowerslist">
+                    <p class="colorlightp">7 Streams</p>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane active"
+                  id="Following"
+                  role="tabpanel"
+                  aria-labelledby="Following-tab"
+                >
+                  <div class="folowerslist">
+                    <p class="colorlightp">7 followings</p>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                    <div class="flistsubfollowers">
+                      <div class="dflex">
+                        <div>
+                          <a href="#">
+                            <img src="./images/folowingimg1.png" />
+                          </a>
+                        </div>
+                        <div class="dflex-col">
+                          <a href="#">
+                            <h2 class="colorblack">Maria</h2>
+                          </a>
+                          <span class="colorlightp">2.3 followers</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#" class="btn Followedbtn">Followed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
