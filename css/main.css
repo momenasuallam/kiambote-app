@@ -1139,6 +1139,7 @@ a[data-toggle="collapse"] {
   .bgactive {
     opacity: 0.2;
     background: #000;
+    overflow: hidden;
   }
   #sidebar ul li a {
     font-size: 16px;
