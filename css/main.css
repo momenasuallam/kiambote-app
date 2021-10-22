@@ -548,6 +548,7 @@ a[data-toggle="collapse"] {
   align-items: center;
   width: 100%;
   padding: 8px 25px;
+  background-color: #fff;
 }
 .sideprofdash {
   display: flex;
@@ -611,6 +612,7 @@ a[data-toggle="collapse"] {
   width: 46px;
   height: 46px;
   border-radius: 50%;
+  border: 5px solid #CFCFCF;
 }
 .logomblshowme {
   display: none;
@@ -978,6 +980,174 @@ a[data-toggle="collapse"] {
   text-align: center;
   margin-bottom: 0px;
 }
+.bglite2{
+  background-color: #F5F5F5 !important;
+}
+.editprofilemain{
+  margin: 30px;
+  background-color: #fff;
+  padding: 25px;
+}
+.editproftxt{
+margin-bottom: 20px;
+}
+.editproftxt img {
+width: 30px;
+margin-right: 10px;
+}
+.editproftxt h2{
+  font-size: 24px;
+}
+.profinputcos{
+  position: relative;
+}
+.profinputcos span{
+ 
+      color: #b7b7b7 !important;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+}
+
+.profinputcos1{
+  position: relative;
+}
+.swtichlabd{
+  position: absolute;
+    top: -15px;
+    right: 12px;
+}
+label.switch {
+  --switch-size: 40px;
+  --thumb-gap: 4px;
+  --thumb-size: calc(var(--switch-size) * 0.55 - var(--thumb-gap));
+  --thumb-active-offset: calc(var(--switch-size) / 2);
+  --track-radius: calc(var(--switch-size) / 1.6666);
+  --thumb-color: #fff;
+  --track-color: rgba(0, 0, 0, 0.07);
+  --accent-color: #2f57d4;
+  --transition: 200ms ease;
+}
+label.switch .track {
+  width: var(--switch-size);
+  height: calc(var(--switch-size) / 1.6666);
+  background: var(--track-color);
+  border-radius: var(--track-radius);
+  border-radius: calc(var(--track-radius) / 2);
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px 0px 4px -2px rgba(0, 0, 0, 0.129);
+  transition: 250ms ease;
+}
+label.switch .thumb {
+  display: inline-block;
+  background: var(--thumb-color);
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  transform: translateX(var(--thumb-gap));
+  transition: transform 250ms ease-in-out;
+}
+label.switch input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+label.switch input[type=checkbox]:checked + .track {
+  background: #34C759;
+}
+label.switch input[type=checkbox]:checked + .track .thumb {
+  transform: translateX(var(--thumb-active-offset));
+}
+label.switch input[type=checkbox]:focus + .track {
+  box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
+}
+label.switch.has-inidicator .thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label.switch.has-inidicator .thumb:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  background: #d71830;
+}
+label.switch.has-inidicator input[type=checkbox]:checked + .track .thumb:before {
+  background: var(--accent-color);
+}
+label.switch.has-label {
+  display: grid;
+  grid-template-areas: "col-1 col-2 col-3";
+  grid-gap: 10px;
+  align-items: center;
+}
+label.switch.has-label .off {
+  color: rgba(0, 0, 0, 0.6);
+  grid-area: col-1;
+  transition: var(--transition);
+}
+label.switch.has-label .on {
+  color: rgba(0, 0, 0, 0.3);
+  grid-area: col-3;
+  transition: var(--transition);
+}
+label.switch.has-label .track {
+  grid-area: col-2;
+}
+label.switch.has-label input[type=checkbox]:checked ~ .on {
+  color: rgba(0, 0, 0, 0.6);
+}
+label.switch.has-label input[type=checkbox]:checked ~ .off {
+  color: rgba(0, 0, 0, 0.3);
+}
+.mt-2{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px)
+{
+  .profinputcos span {
+    font-size: 12px !important;
+}
+.basictxt{
+  font-size: 16px;
+}
+.editproftxt img {
+    width: 22px;
+}
+.editproftxt h2 {
+    font-size: 20px;
+}
+.swtichlabd{
+  top: -17px;
+}
+label.switch .track {
+    width: 35px;
+    height: 18px;
+}
+label.switch .thumb {
+    width: 13px;
+    height: 13px;
+}
+.editprofilemain {
+    margin: 16px;
+}
+}
+
+
 @media (max-width: 1600px) {
   .socialfollow {
     position: absolute;
