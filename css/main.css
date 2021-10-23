@@ -1109,12 +1109,59 @@ label.switch.has-label input[type=checkbox]:checked ~ .off {
 .mt-2{
   margin-top: 20px;
 }
+.imgshownoti1{
+  cursor: pointer;
+}
+.downprofdiv{
+width: 260px;
+border-radius: 8px;
+background-color: #fff;
+padding: 15px;
+    position: absolute;
+    top: 65px;
+    box-shadow: -1px 3px 20px #00000024;
+    display: none;
+}
+.dflexdownprof{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      padding: 8px 0;
+}
+.downprof1{
+display: flex;
+}
+.downprof1 img{
+width: 20px;
+margin-right: 10px;
+}
+.downprof1 h2{
+font-size: 16px;
+margin-bottom: 0px;
+color: rgb(0 0 0 / 100%);
+}
+.downprof1 h2 a{
+  text-decoration: none;
+  font-size: 16px;
+margin-bottom: 0px;
+color: #000 !important;
+}
+.downprof2{
 
-
-
-
-
-
+}
+.downprof2 p{
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: rgb(0 0 0 / 40%);
+}
+.downprof2 label{
+  position: absolute;
+  top: 32px;
+  right: 20px;
+}
+.downprof2 label.switch input[type=checkbox]:checked + .track {
+    background: #345A71 !important;
+}
 
 
 @media (max-width: 500px)

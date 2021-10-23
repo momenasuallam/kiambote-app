@@ -13,4 +13,7 @@ $(document).ready(function () {
     $(".diswhenhidesb button").toggleClass("hellosidebtn");
     $("#content").toggleClass("bgactive");
   });
+  $(".imgshownoti1").on("click", function () {
+    $(".downprofdiv").toggle();
+  });
 });
