@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Sessions</title>
+
+  <!-- CSS files -->
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body class="bglite2">
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <button type="button" id="" class="btn sidebarCollapse sidebtnwidth">
+          <img src="./images/Icon feather-menu.png" />
+        </button>
+        <a><img src="./images/logo-2.png" /></a>
+      </div>
+
+      <ul class="list-unstyled components listnavbar">
+        <p>General</p>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/dashboard-icon.svg" /></span>
+            Dashboard
+          </a>
+        </li>
+        <li class="active">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/sessions-icon.svg" /></span>
+            My sessions
+          </a>
+        </li>
+      </ul>
+      <ul class="list-unstyled components listnavbar">
+        <p>Settings</p>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/Icon feather-edit-3.svg" /></span>
+            Edit profile
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/Icon awesome-unlock.svg" /></span>
+            Change Password
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/faq.svg" /></span>
+            FAQs
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/chat.svg" /></span>
+            Support
+          </a>
+        </li>
+      </ul>
+
+
+
+      <div class="sidebarfooter">
+        <p>2021 All Copyrights Reserved</p>
+      </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <div class="topbarnav">
+        <div class="diswhenhidesb">
+          <button type="button" id="" class="btn sidebarCollapse hellosidebtn sidebtnwidth">
+            <img src="./images/Icon feather-menu-black.png" />
+          </button>
+          <a href="#" class="logomblshowme"><img src="./images/logo-2-dark.png" /></a>
+          <h2 class="artistpanelh2">Artist Panel</h2>
+        </div>
+
+        <div class="sideprofdash">
+          <a class="iconnoti2" href="#"><img src="./images/Icon ionic-ios-notifications.svg" />
+            <span class="noticircle"></span>
+          </a>
+          <a class="iconnoti2 iconlogoutbg" href="#"><img src="./images/Icon feather-log-out.svg" /></a>
+          <a class="imgshownoti1"><img class="imgprof imgprofnoborder" src="./images/folowingimg1.png" /></a>
+          <div class="downprofdiv">
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon material-language.svg" />
+                <h2>Language</h2>
+              </div>
+              <div class="downprof2">
+                <p>English (US)</p>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon ionic-md-moon.svg" />
+                <h2>Dark Mode</h2>
+              </div>
+              <div class="downprof2">
+                <label for="switch-1" class="switch ">
+                  <input type="checkbox" name="switch-1" id="switch-1" checked />
+                  <span class="track"><span class="thumb"></span></span>
+                </label>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon material-edit.svg" />
+                <h2><a href="#">Change Password</a></h2>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon awesome-question-circle.svg" />
+                <h2><a href="#">FAQ</a></h2>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon material-question-answer.svg" />
+                <h2><a href="#">Support</a></h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="session-table">
+        <div class="heading-sess">
+          <div class="sesstxt1">
+           <div>
+              <span>6 sessions</span>
+            <h2>My Sessions</h2>
+           </div>
+            <div>
+              <div class="searchdesk searchme">
+                <div class="input-group">
+                  <input type="text" class="form-control input-text" style="border-radius: 8px !important;" placeholder="Search Session">
+                  <div class="input-group-append">
+                    <button class="" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sortselect">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Sort by</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="tblw1">My videos</th>
+                <th class="tblw2">Name</th>
+                <th class="tblw3">Category</th>
+                <th class="tblw4">Date</th>
+                <th class="tblw5">Length</th>
+                <th class="tblw6">Like</th>
+                <th class="tblw7">Views</th>
+                <th class="tblw8"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tblw1">
+                  <div>
+                    <img src="./images/image-liveup1.png" />
+                  </div>
+                </td>
+                <td class="tblw2">Here we are again!</td>
+                <td class="tblw3">Gaming</td>
+                <td class="tblw4">09/08/2021</td>
+                <td class="tblw5">2h 24s</td>
+                <td class="tblw6">282</td>
+                <td class="tblw7">1,123</td>
+                <td class="tblw8"> <a href="#" class="iconprof"><img style="width: 3px"
+                      src="./images/Icon feather-more-vertical.svg" /></a></td>
+              </tr>
+               <tr>
+                <td class="tblw1">
+                  <div>
+                    <img src="./images/image-liveup1.png" />
+                  </div>
+                </td>
+                <td class="tblw2">Here we are again!</td>
+                <td class="tblw3">Gaming</td>
+                <td class="tblw4">09/08/2021</td>
+                <td class="tblw5">2h 24s</td>
+                <td class="tblw6">282</td>
+                <td class="tblw7">1,123</td>
+                <td class="tblw8"> <a href="#" class="iconprof"><img style="width: 3px"
+                      src="./images/Icon feather-more-vertical.svg" /></a></td>
+              </tr>
+               <tr>
+                <td class="tblw1">
+                  <div>
+                    <img src="./images/image-liveup1.png" />
+                  </div>
+                </td>
+                <td class="tblw2">Here we are again!</td>
+                <td class="tblw3">Gaming</td>
+                <td class="tblw4">09/08/2021</td>
+                <td class="tblw5">2h 24s</td>
+                <td class="tblw6">282</td>
+                <td class="tblw7">1,123</td>
+                <td class="tblw8"> <a href="#" class="iconprof"><img style="width: 3px"
+                      src="./images/Icon feather-more-vertical.svg" /></a></td>
+              </tr>
+               <tr>
+                <td class="tblw1">
+                  <div>
+                    <img src="./images/image-liveup1.png" />
+                  </div>
+                </td>
+                <td class="tblw2">Here we are again!</td>
+                <td class="tblw3">Gaming</td>
+                <td class="tblw4">09/08/2021</td>
+                <td class="tblw5">2h 24s</td>
+                <td class="tblw6">282</td>
+                <td class="tblw7">1,123</td>
+                <td class="tblw8"> <a href="#" class="iconprof"><img style="width: 3px"
+                      src="./images/Icon feather-more-vertical.svg" /></a></td>
+              </tr>
+               <tr>
+                <td class="tblw1">
+                  <div>
+                    <img src="./images/image-liveup1.png" />
+                  </div>
+                </td>
+                <td class="tblw2">Here we are again!</td>
+                <td class="tblw3">Gaming</td>
+                <td class="tblw4">09/08/2021</td>
+                <td class="tblw5">2h 24s</td>
+                <td class="tblw6">282</td>
+                <td class="tblw7">1,123</td>
+                <td class="tblw8"> <a href="#" class="iconprof"><img style="width: 3px"
+                      src="./images/Icon feather-more-vertical.svg" /></a></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <p class="norecordfound">No more recorded streams</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
