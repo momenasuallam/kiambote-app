@@ -1683,7 +1683,7 @@ padding: 14px 15px;
 background-color: #fff;
 border-bottom-left-radius: 16px;
 border-bottom-right-radius: 16px;
-max-height: 500px;
+max-height: 400px;
 overflow-y: auto;
 }
 .chatmsgbox{
@@ -1718,8 +1718,109 @@ font-size: 13px;
 position: absolute;
 right: 0;
 }
+.livestreamvideo{
+  margin-bottom: 20px;
+}
+.livestreamvideo .iconlivevideo{
+  background-color: #00000099 !important;
+}
+.livestreamvideo .livevideometa{
+padding: 12px;
+}
+.livestreamvideo .iconlivevideo img {
+    width: 16px !important;
+}
+.lsbottomtxt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 5px;
+}
+.lsbottomtxt h2{
+font-size: 20px;
+font-weight: 600;
+}
+.lsbottomtxt a{
+text-decoration: none;
+    background-color: #3359701a;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    vertical-align: middle;
+    padding: 7px;
 
-
+}
+.lsbottomtxt a .fa{
+color: #345A71;
+}
+.hashtagssv{
+margin-top: 10px;
+}
+.hashtagssv a{
+background-color: #324B54;
+border-radius: 4px;
+color: #fff !important;
+text-decoration: none;
+margin-right: 3px;
+padding: 6px;
+font-size: 13px;
+}
+.smallstvideoclips{
+  display: flex;
+  margin-top: 10px;
+  position:relative;
+  overflow-x: auto;
+}
+.smallstvideoclips div{
+margin-right: 5px;
+position: relative;
+background-color: #000000;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+.showstreamcv:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 38px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: #42b4d7;
+}
+.smallstvideoclips div img{
+  width: 100%;
+  height: 38px;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+.metalsvideo{
+position: absolute;
+    bottom: 0px;
+    left: 80px;
+}
+.metalsvideo img{
+width: 150px;
+height: 80px;
+/* border: 1px solid #fff; */
+border-radius: 6px;
+}
+.metalsvideo h2{
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 0px;
+}
+.metalsvideo p{
+font-size: 13px;
+color: #fff;
+}
 
 @media(min-width:1600px){
  
@@ -1733,6 +1834,14 @@ right: 0;
 .artistpanelh2 {
     font-size: 28px;
 }
+#sidebar {
+    min-width: 275px;
+    max-width: 275px;
+    min-height: 100vh;
+}
+#sidebar.active {
+  margin-left: -275px;
+}
 }
 .artistpanelh2{
   color: #00495C;
@@ -1744,6 +1853,7 @@ right: 0;
 .sidebtnwidth{
   width: 48px;
 }
+
 @media(max-width: 1600px)
 {
    .sidebarfooter{
@@ -1770,6 +1880,12 @@ right: 0;
     width: 40px;
     height: 40px;
     margin-right: 8px;
+}
+.flistsubfollowing a{
+  font-size: 14px;
+}
+.flistsubfollowing a img {
+    margin-right: 2px;
 }
 }
 
