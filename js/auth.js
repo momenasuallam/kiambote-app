@@ -8,10 +8,13 @@ $(".toggle-password").click(function () {
   }
 });
 $(document).ready(function () {
+  //  $("#content").addClass("widcarousel");
   $(".sidebarCollapse").on("click", function () {
     $("#sidebar").toggleClass("active");
     $(".diswhenhidesb button").toggleClass("hellosidebtn");
     $("#content").toggleClass("bgactive");
+    //  $("#content").removeClass("widcarousel");
+    
   });
   $(".imgshownoti1").on("click", function () {
     $(".downprofdiv").toggle();

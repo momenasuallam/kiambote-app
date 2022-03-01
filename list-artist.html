@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+
+  <!-- CSS files -->
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body class="bglight">
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <button type="button" id="" class="btn sidebarCollapse">
+          <img src="./images/Icon feather-menu.png" />
+        </button>
+        <a><img src="./images/logo-2.png" /></a>
+      </div>
+
+      <ul class="list-unstyled components listnavbar">
+        <p>General</p>
+        <li class="active">
+          <a href="./home.html">
+            <span class="iconnavside"><img src="./images/Icon feather-home.svg" /></span>
+            Home
+          </a>
+        </li>
+        <li class="">
+          <a href="./artist-profile.html">
+            <span class="iconnavside"><img src="./images/icon-artists.svg" /></span>
+            Artists
+          </a>
+        </li>
+        <li class="navundernav">
+          <div>
+            <span class="iconnavside"><img src="./images/Icon awesome-list-ul.svg" /></span>
+          </div>
+          <div class="w100">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Categories</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="#">Categories 1</a>
+              </li>
+              <li>
+                <a href="#">Categories 2</a>
+              </li>
+              <li>
+                <a href="#">Categories 3</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/Icon feather-bookmark.svg" /></span>
+            Saved
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            <span class="iconnavside"><img src="./images/Icon feather-settings.svg" /></span>
+            Setting
+          </a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled components listnavbar">
+        <p>Following</p>
+
+        <div class="folowinglist">
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+
+            <span>
+              <span class="livered"></span>
+              Live</span>
+          </div>
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+
+            <span>
+              <span class="livered"></span>
+              Live</span>
+          </div>
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+
+            <span>
+              <span class="livered"></span>
+              Live</span>
+          </div>
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+          </div>
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+          </div>
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+          </div>
+          <div class="flistsubfollowing">
+            <a href="#">
+              <img src="./images/folowingimg1.png" />
+              AlfaGaming
+            </a>
+          </div>
+        </div>
+      </ul>
+
+      <div class="sidebarfooter">
+        <p>2021 All Copyrights Reserved</p>
+      </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <div class="topbarnav">
+        <div class="diswhenhidesb">
+          <button type="button" id="" class="btn sidebarCollapse hellosidebtn">
+            <img src="./images/Icon feather-menu-black.png" />
+          </button>
+          <a href="#" class="logomblshowme"><img src="./images/logo-2-dark.png" /></a>
+        </div>
+        <div class="searchdesk">
+          <div class="input-group">
+            <input type="text" class="form-control input-text" placeholder="Search" aria-label="Recipient's username"
+              aria-describedby="basic-addon2" />
+            <div class="input-group-append">
+              <button class="btn btnpri2" type="button">
+                <i class="fa fa-search colorwhite"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sideprofdash">
+          <a class="iconnoti2 search2topmbl" href="#"><i class="fa fa-search"></i></a>
+          <a class="iconnoti2" href="#"><img src="./images/Icon ionic-ios-notifications.svg" /></a>
+          <a class="imgshownoti1"><img class="imgprof" src="./images/folowingimg1.png" /></a>
+          <div class="downprofdiv">
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon material-language.svg" />
+                <h2>Language</h2>
+              </div>
+              <div class="downprof2">
+                <p>English (US)</p>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon ionic-md-moon.svg" />
+                <h2>Dark Mode</h2>
+              </div>
+              <div class="downprof2">
+                <label for="switch-1" class="switch ">
+                  <input type="checkbox" name="switch-1" id="switch-1" checked />
+                  <span class="track"><span class="thumb"></span></span>
+                </label>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon material-edit.svg" />
+                <h2><a href="#">Change Password</a></h2>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon awesome-question-circle.svg" />
+                <h2><a href="#">FAQ</a></h2>
+              </div>
+            </div>
+            <div class="dflexdownprof">
+              <div class="downprof1">
+                <img src="./images/Icon material-question-answer.svg" />
+                <h2><a href="#">Support</a></h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <section class="profilesection">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="searchhead">
+              <div class="searchcarbar">
+
+                <div>
+                  <div class="sendmsg ">
+                    <input type="text" class="form-control" placeholder="Search by name" required>
+                    <button type="submit"><img src="./images/searchicon.svg" /></button>
+                  </div>
+                </div>
+              </div>
+              <div class="searchviews">
+                <a class="svsactive">
+                  <img src="./images/Icon feather-grid.svg" />
+                </a>
+                <a>
+                  <img src="./images/Icon feather-list.svg" />
+                </a>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="mainprogilesp">
+                <span class="topborderspan"></span>
+                <div class="profmeta">
+                  <div class="imgprof1">
+                    <a href="#"><img src="./images/img01art.png"></a>
+                  </div>
+                  <div class="">
+                    <h2>Abid Iqbal</h2>
+                    <p>2.3 followers</p>
+                  </div>
+                </div>
+                <div class="profmeta">
+                  <div class="imgprof1">
+                    <a href="#"><img src="./images/img01art.png" class="borderblueactive"></a>
+                  </div>
+                  <div class="">
+                    <h2>Abid Iqbal</h2>
+                    <p>2.3 followers</p>
+                  </div>
+                </div>
+                <div class="profmeta">
+                  <div class="imgprof1">
+                    <a href="#"><img src="./images/img01art.png" class="borderblueactive"></a>
+                  </div>
+                  <div class="">
+                    <h2>Abid Iqbal</h2>
+                    <p>2.3 followers</p>
+                  </div>
+                </div>
+                <div class="profmeta">
+                  <div class="imgprof1">
+                    <a href="#"><img src="./images/img01art.png" class="borderblueactive"></a>
+                  </div>
+                  <div class="">
+                    <h2>Abid Iqbal</h2>
+                    <p>2.3 followers</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
